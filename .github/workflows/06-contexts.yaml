@@ -17,4 +17,4 @@ jobs:
                 echo "Run no: ${{ github.run_number }}"
             - name: Retrieve Variable
               run: |
-                echo "Variable value: ${{ vars.MYVAR }}"
+                echo "Variable value: ${{ vars.MY_VAR }}"
