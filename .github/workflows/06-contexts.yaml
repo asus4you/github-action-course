@@ -1,5 +1,5 @@
 name: 06 - Contexts
-run-name: My custom workflow run-name ${{ github.actor }}
+run-name: My custom workflow and Input context is set to ${{ inputs.debug }}
 on: 
     push:
     workflow_dispatch:
