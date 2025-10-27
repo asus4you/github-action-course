@@ -1,5 +1,5 @@
 name: 06 - Contexts
-run-name: My custom workflow run-name IS SAI
+# run-name: My custom workflow run-name IS SAI
 on: 
     push:
     workflow_dispatch:
