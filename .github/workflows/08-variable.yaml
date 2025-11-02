@@ -1,7 +1,7 @@
 name: Using Variables
 on:
     push:
-    worlflow_dispatch:
+    workflow_dispatch:
 env:
     WORKFLOW_VAR: 'I am a workflow env var'
     OVERWRITTEN: 'I will be overwrittten'
