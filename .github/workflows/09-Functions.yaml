@@ -6,6 +6,9 @@ jobs:
     echo1:
         runs-on: ubuntu-latest
         steps:
+            - name: Run the sleep command 
+              run: |
+                sleep 30
             - name: Failing step
               run: exit 1
             - name: I will be skipped
@@ -17,9 +20,6 @@ jobs:
             - name: I will execute if not cancelled
               if: ${{ !cancelled() }}
               run: echo "I will always print, except the workflow is cancelled"
-            - name: Run the sleep command 
-              run: |
-                sleep 30
             - name: I wil be executed if cancelled
               if: ${{ cancelled() }}
               run: echo "I will be executed if the workflow is cancelled"
