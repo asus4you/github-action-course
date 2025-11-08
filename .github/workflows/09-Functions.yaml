@@ -15,7 +15,7 @@ jobs:
                 EOF
             - name: Bug Step
               if: ${{ !cancelled() && contains(github.event.pull_request.title, 'fix' )}}
-              run: echo "I am a bug fix"
+              run: echo "I am a bug fix for Sure"
             - name: Failing step
               run: exit 1
             - name: I will be skipped
