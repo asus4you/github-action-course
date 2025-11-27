@@ -17,7 +17,7 @@ on:
                     - v2
                     - v3
                 default: v3
-                description: Version to be deployed.  
+                description: Version to be deployed and versions
 jobs:
     build:
         runs-on: ubuntu-latest 
