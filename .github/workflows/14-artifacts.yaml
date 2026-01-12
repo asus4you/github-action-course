@@ -1,9 +1,6 @@
 name: 14 - Working with Artifacts
-
 on:
   workflow_dispatch:
-
-
 jobs:
   test-build:
     runs-on: ubuntu-latest
